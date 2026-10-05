@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>POWER FITNESS | قوتك تبدأ من هنا</title>
+<meta name="description" content="POWER FITNESS نادٍ رياضي في نابلس بقسمين للرجال والسيدات، مدربون محترفون وأجهزة حديثة.">
+<meta name="theme-color" content="#0c0c0d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SVG logo symbol: replace the <symbol> content (or the .logo block) with your real logo later -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="pf-mark" viewBox="0 0 48 48">
+    <path d="M6 6h22a12 12 0 0 1 0 24H18v12H6z" fill="currentColor"/>
+    <path d="M18 14h9a4 4 0 0 1 0 8h-9z" fill="#0c0c0d"/>
+    <path d="M30 34l6-10 4 6 4-8v16H30z" fill="#fff" opacity=".92"/>
+  </symbol>
+  <symbol id="pf-dumbbell" viewBox="0 0 64 24" fill="currentColor"><rect x="0" y="6" width="6" height="12" rx="2"/><rect x="8" y="2" width="8" height="20" rx="2"/><rect x="16" y="10" width="32" height="4"/><rect x="48" y="2" width="8" height="20" rx="2"/><rect x="58" y="6" width="6" height="12" rx="2"/></symbol>
+</svg>
+
+<header class="header" id="header">
+  <div class="wrap nav">
+    <a href="#home" class="logo" aria-label="POWER FITNESS">
+      <svg class="logo-mark" aria-hidden="true"><use href="#pf-mark"/></svg>
+      <span class="logo-text"><b>POWER</b><i>FITNESS</i></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="القائمة الرئيسية">
+      <a href="#home">الرئيسية</a><a href="#men">قسم الرجال</a>
+      <a href="#women">قسم السيدات</a><a href="#plans">الاشتراكات</a><a href="#trainers">المدربين</a><a href="#contact">تواصل معنا</a>
+      <a href="#booking" class="btn btn-red menu-cta">احجز الآن</a>
+    </nav>
+    <a href="#booking" class="btn btn-red nav-cta">احجز الآن</a>
+    <button class="burger" id="burger" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- HERO: change the background image in style.css (.hero-bg) -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-in">
+    <h1>قوتك تبدأ من هنا</h1>
+    <p class="lead">في POWER FITNESS، نساعدك على بناء جسم أقوى، لياقة أفضل، وثقة أكبر.</p>
+    <div class="actions">
+      <a href="#booking" class="btn btn-red btn-lg">احجز الآن</a>
+      <a href="#sections" class="btn btn-line btn-lg">اكتشف النادي</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sections">
+  <div class="wrap">
+    <div class="head reveal"><h2>اختر قسمك</h2><p>قسمان منفصلان بنفس مستوى الجودة والتجهيز.</p></div>
+    <div class="duo">
+      <article class="card-big reveal" id="men">
+        <div class="card-art art-men" aria-hidden="true"><svg><use href="#pf-dumbbell"/></svg></div>
+        <div class="card-body">
+          <h3>POWER FITNESS — MEN</h3>
+          <ul><li>تمارين القوة</li><li>بناء العضلات</li><li>الكارديو</li><li>اللياقة البدنية</li><li>التدريب الشخصي</li></ul>
+          <button class="btn btn-red" data-gender="men">استكشف قسم الرجال</button>
+        </div>
+      </article>
+      <article class="card-big reveal" id="women">
+        <div class="card-art art-women" aria-hidden="true"><svg><use href="#pf-dumbbell"/></svg></div>
+        <div class="card-body">
+          <h3>POWER FITNESS — WOMEN</h3>
+          <ul><li>اللياقة البدنية</li><li>الكارديو</li><li>تمارين القوة</li><li>التمارين الجماعية</li><li>التدريب الشخصي</li></ul>
+          <button class="btn btn-red" data-gender="women">استكشفي قسم السيدات</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS: edit price via data-price, name via data-name -->
+<section class="section dark" id="plans">
+  <div class="wrap">
+    <div class="head reveal"><h2>اختر اشتراكك</h2><p>أسعار واضحة وباقات تناسب هدفك.</p></div>
+    <div class="plans">
+      <article class="plan reveal">
+        <h3>اشتراك شهري</h3>
+        <div class="price">120<small>₪</small></div>
+        <ul><li>دخول الجيم</li><li>استخدام الأجهزة</li><li>الاستفادة من المرافق</li></ul>
+        <button class="btn btn-dark" data-plan="m1" data-name="اشتراك شهري" data-price="120">احجز الآن</button>
+      </article>
+      <article class="plan featured reveal">
+        <span class="ribbon">الأكثر اختيارًا</span>
+        <h3>اشتراك 3 أشهر</h3>
+        <div class="price">300<small>₪</small></div>
+        <ul><li>جميع مميزات الاشتراك الشهري</li><li>متابعة أفضل</li><li>توفير 60 ₪</li></ul>
+        <button class="btn btn-red" data-plan="m3" data-name="اشتراك 3 أشهر" data-price="300">احجز الآن</button>
+      </article>
+      <article class="plan reveal">
+        <h3>اشتراك 6 أشهر</h3>
+        <div class="price">500<small>₪</small></div>
+        <ul><li>جميع المميزات</li><li>أولوية في بعض الخدمات</li><li>توفير 220 ₪</li></ul>
+        <button class="btn btn-dark" data-plan="m6" data-name="اشتراك 6 أشهر" data-price="500">احجز الآن</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="trainers">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>مدربونا</h2>
+      <p>فريق يتابع تقدمك ويدفعك للأمام.</p>
+    </div>
+
+    <div class="trainers">
+      <article class="trainer reveal">
+        <div class="t-body">
+          <h3>أحمد خالد</h3>
+          <b>مدرب لياقة وبناء عضلات</b>
+          <p>خبرة 8 سنوات في برامج الكتلة العضلية.</p>
+        </div>
+      </article>
+
+      <article class="trainer reveal">
+        <div class="t-body">
+          <h3>محمد سامر</h3>
+          <b>مدرب قوة وكمال أجسام</b>
+          <p>خبرة 10 سنوات في رفع الأوزان والتحضير للبطولات.</p>
+        </div>
+      </article>
+
+      <article class="trainer reveal">
+        <div class="t-body">
+          <h3>سارة أحمد</h3>
+          <b>مدربة لياقة وتدريب وظيفي</b>
+          <p>خبرة 6 سنوات في التدريب الوظيفي والحصص الجماعية.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="trial">
+  <div class="wrap trial-in reveal">
+    <div><h2>مش متأكد؟ جرّب أولًا</h2><p>احجز حصتك التجريبية واكتشف أجواء POWER FITNESS بنفسك.</p></div>
+    <button class="btn btn-white btn-lg" id="trialBtn">احجز حصة تجريبية</button>
+  </div>
+</section>
+
+<section class="section" id="booking">
+  <div class="wrap booking">
+    <div class="head left reveal"><h2>احجز اشتراكك الآن</h2><p>املأ النموذج وسنتواصل معك لتأكيد الحجز.</p></div>
+    <form id="bookForm" class="form reveal" novalidate>
+      <div class="tabs" role="group" aria-label="نوع الحجز">
+        <button type="button" class="tab active" data-type="sub">اشتراك</button>
+        <button type="button" class="tab" data-type="trial">حصة تجريبية مجانية</button>
+      </div>
+      <div class="field"><label for="name">الاسم الكامل</label><input id="name" name="name" autocomplete="name"><small class="err"></small></div>
+      <div class="field"><label for="phone">رقم الهاتف</label><input id="phone" name="phone" type="tel" inputmode="tel" placeholder="059xxxxxxx" autocomplete="tel"><small class="err"></small></div>
+      <div class="field"><label>القسم</label>
+        <div class="radios"><label><input type="radio" name="gender" value="men"> رجال</label><label><input type="radio" name="gender" value="women"> سيدات</label></div>
+        <small class="err"></small></div>
+      <div class="field" id="planField"><label for="plan">الباقة</label><select id="plan" name="plan"></select><small class="err"></small></div>
+      <div class="field"><label for="date">تاريخ البدء</label><input id="date" name="date" type="date"><small class="err"></small></div>
+      <div class="field"><label for="notes">ملاحظات إضافية (اختياري)</label><textarea id="notes" name="notes" rows="3"></textarea></div>
+      <div class="summary" id="summary" aria-live="polite"></div>
+      <button class="btn btn-red btn-lg full" type="submit">تأكيد الحجز</button>
+    </form>
+  </div>
+</section>
+
+<section class="section dark" id="reviews">
+  <div class="wrap">
+    <div class="head reveal"><h2>آراء المشتركين</h2></div>
+    <div class="reviews">
+      <figure class="review reveal"><div class="stars">★★★★★</div><p>تجربة ممتازة، الأجهزة متنوعة والمدربين متعاونين جدًا.</p><b>خالد م.</b></figure>
+      <figure class="review reveal"><div class="stars">★★★★★</div><p>المكان مرتب والأجواء تحفزك على الاستمرار.</p><b>أنس ح.</b></figure>
+      <figure class="review reveal"><div class="stars">★★★★★</div><p>أفضل شيء هو تنوع التمارين ووجود قسم مخصص للسيدات.</p><b>لينا س.</b></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap narrow">
+    <div class="head reveal"><h2>أسئلة شائعة</h2></div>
+    <div id="faqList" class="reveal"></div>
+  </div>
+</section>
+
+<section class="section dark" id="contact">
+  <div class="wrap contact">
+    <div class="reveal">
+      <h2>POWER FITNESS</h2>
+      <ul class="info">
+        <li><b>📍 الموقع</b>نابلس، فلسطين</li>
+        <li><b>📞 الهاتف</b><a href="tel:+970590000000" dir="ltr">059 XXX XXXX</a></li>
+        <li><b>🕒 ساعات العمل</b>6:00 صباحًا — 11:00 مساءً</li>
+      </ul>
+      <div class="socials">
+        <a class="btn btn-wa" href="https://wa.me/970590000000" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-line" href="#" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-line" href="#" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="map reveal"><iframe title="موقع النادي" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=35.22%2C32.20%2C35.30%2C32.24&amp;layer=mapnik"></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <div><div class="logo"><svg class="logo-mark" aria-hidden="true"><use href="#pf-mark"/></svg><span class="logo-text"><b>POWER</b><i>FITNESS</i></span></div><p>قوتك تبدأ من هنا.</p></div>
+    <nav><a href="#home">الرئيسية</a><a href="#plans">الاشتراكات</a><a href="#trainers">المدربين</a><a href="#booking">الحجز</a></nav>
+    <nav><a href="#" target="_blank" rel="noopener">Instagram</a><a href="#" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/970590000000" target="_blank" rel="noopener">WhatsApp</a></nav>
+  </div>
+  <div class="copy">© 2026 POWER FITNESS. جميع الحقوق محفوظة.</div>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <div class="check">✓</div><h3 id="mTitle">تم استلام طلبك بنجاح</h3>
+    <div class="m-body" id="mBody"></div>
+    <button class="btn btn-red" id="mClose">حسنًا</button>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
